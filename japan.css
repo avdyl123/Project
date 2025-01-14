@@ -1,4 +1,4 @@
- body {
+body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -13,9 +13,9 @@
 
         header img {
             width: 100%;
-            height: 70vh;
+            height: 60vh;
             object-fit: cover;
-            filter: brightness(0.6);
+            filter: brightness(0.7);
         }
 
         header .title {
@@ -23,9 +23,9 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 3.5rem;
+            font-size: 100px;
             font-weight: bold;
-            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+            
         }
 
         nav ul {
@@ -54,25 +54,25 @@
             transform: scale(1.1);
         }
 
-        .countries-section {
+        .content-section {
             padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
-        .countries-section h2 {
+        .content-section h2 {
             text-align: center;
             color: #2c3e50;
-            margin-bottom: 20px;
         }
 
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
+            margin-top: 20px;
         }
 
-        .country-card {
+        .card {
             background: white;
             border: 1px solid #ddd;
             border-radius: 10px;
@@ -82,23 +82,22 @@
             text-align: center;
         }
 
-        .country-card img {
+        .card img {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
+            height: auto;
             border-radius: 8px;
         }
 
-        .country-card:hover {
+        .card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
 
-        .country-card h3 {
+        .card h3 {
             margin-top: 15px;
             color: #2c3e50;
         }
 
-        .country-card p {
+        .card p {
             color: #666;
         }
