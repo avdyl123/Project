@@ -50,7 +50,7 @@ body {
         }
 
         nav ul li a:hover {
-            background-color: #1abc9c;
+            background-color: #3498db;
             transform: scale(1.1);
         }
 
@@ -87,7 +87,6 @@ body {
             height: auto;
             border-radius: 8px;
         }
-
 
         .card:hover {
             transform: translateY(-5px);

@@ -1,4 +1,4 @@
-body {
+        body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -38,7 +38,7 @@ body {
         }
 
         nav ul li {
-            margin: 15px;
+            margin:  15px;
         }
 
         nav ul li a {
@@ -87,7 +87,6 @@ body {
             height: auto;
             border-radius: 8px;
         }
-
 
         .card:hover {
             transform: translateY(-5px);
