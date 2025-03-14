@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Japan</title>
+    <link rel="stylesheet" href="japan.css">
+    
+</head>
+<body>
+
+
+    <Style>
+       
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d3557;
+    color: white;
+    padding: 20px;
+}
+
+header img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+header .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav {
+    background-color: #457b9d;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    color: #ff6f61;
+    transition: 0.3s;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #1d3557;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.6rem;
+    color: #1d3557;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.card a {
+    display: inline-block;
+    text-decoration: none;
+    color: #1d3557;
+    font-weight: bold;
+    border: 2px solid #1d3557;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    background-color: #1d3557;
+    color: white;
+}
+
+.highlights ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.highlights li {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.testimonials blockquote {
+    background-color: #e1e1e1;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.videos .video-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.videos iframe {
+    border-radius: 8px;
+}
+
+.events-travel {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.events, .travel-deals {
+    width: 48%;
+}
+
+.events ul, .travel-deals ul {
+    list-style-type: none;
+}
+
+.events li, .travel-deals li {
+    margin-bottom: 15px;
+}
+
+.events h2, .travel-deals h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.travel-deals a {
+    text-decoration: none;
+    color: #1d3557;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.travel-deals a:hover {
+    color: #ff6f61;
+}
+
+.image-gallery {
+    background-color: white;
+    padding: 50px 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+    opacity: 0.8;
+}
+
+footer {
+    background-color: #457b9d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+    </Style>
+
+<header>
+    <img src="japan.png" alt="Japan">
+    <div class="title">Discover Japan</div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#hotels">Hotels</a></li>
+        <li><a href="#food">Food</a></li>
+        <li><a href="#places">Places to Visit</a></li>
+         <li><a href="#moreinfo">More info</a></li>
+         
+    </ul>
+</nav>
+
+<div class="section" id="hotels">
+    <h2>Hotels</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="1.png" alt="Tokyo Hotel">
+            <h3>Luxury Hotel in Tokyo</h3>
+            <p>Experience the elegance of Tokyo with stunning views and world-class service.</p>
+             <a href="https://www.booking.com/luxury/city/jp/tokyo.en-gb.html?aid=375815&label=tokyo-KcrBTDqrOLtTuVYY4UgAYAS388525113116%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1570287535%3Alp1028594%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Yf23yREhrOV9ewivaZVuzFs&gclid=Cj0KCQiAv628BhC2ARIsAIJIiK9fh3r8iUZEpsMRlCsmd0mVipPpk4Vg26t9Hk2_ox9CiQ">Book in!</a>
+        </div>
+        <div class="card">
+            <img src="2.png" alt="Kyoto Hotel">
+            <h3>Traditional Ryokan in Kyoto</h3>
+            <p>Stay in a traditional Japanese inn and immerse yourself in Kyoto's history.</p>
+            <a href="https://www.booking.com/ryokans/city/jp/kyoto.html?keep_landing=1&sid=37d6652bb832028615dfc36094f961cd&aid=318615;label=New_English_EN_XK_27034582465-fH3RL0WP0Hh9rgYQfp35AwS217274091833:pl:ta:p1:p2:ac:ap:neg:fi:tidsa-64415367985:lp1028594:li:dec:dm;ws=&gad_source=1&gclid=Cj0KCQiAv628BhC2ARIsAIJIiK_w2h58p0vTWS2pgeziXsrb6CwP6pwb1wxtIzKsgMHeAghoVOLK2H0aAtbCEALw_wcB">Book in!</a>
+        </div>
+        <div class="card">
+            <img src="3.png" alt="Osaka Hotel">
+            <h3>Modern Hotel in Osaka</h3>
+            <p>Enjoy modern amenities in the heart of Osaka's bustling city life.</p>
+            <a href="https://www.booking.com/ryokans/city/jp/osaka.en-gb.html?aid=377342&label=osaka-Twx_c%2AMK4BeMdMAt8wZasgS626074654246%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1233088022863%3Alp1028594%3Ali%3Adec%3Adm&gclid=Cj0KCQiAv628BhC2ARIsAIJIiK_TwjLFtNeOH2sP-8DsXcYEEAwzG7cULRTxduIYyZENIxFZYYZHESEaAqYvEALw_wcB&keep_landing=1&sid=f7991437328639c00e4c09631033294b">Book in!</a>
+        </div>
+        <div class="card">
+            <img src="4.png" alt="Hokkaido Hotel">
+            <h3>Resort in Hokkaido</h3>
+            <p>Relax in a serene resort surrounded by Hokkaido's natural beauty.</p>
+            <a href="https://www.booking.com/ryokans/region/jp/hokkaido.en-gb.html?aid=376619&label=hokkaido-pYjQMzwmwgAkXpIRz_zQGQS394127824699%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-15803901415%3Alp1028594%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfebvPBbIhsADWsIhdoUSik&gclid=Cj0KCQiAv628BhC2ARIsAIJIiK_Q-YXOQIRr9xlWTZBxlpkfPOLBNh35PCU-1-4sr36YzGQUWWgvtDoaAsWeEALw_wcB&keep_landing=1&sid=f7991437328639c00e4c09631033294b">Book in!</a>
+        </div>
+        <div class="card">
+            <img src="5.png" alt="Okinawa Hotel">
+            <h3>Beach Resort in Okinawa</h3>
+            <p>Unwind at a beachside resort with stunning ocean views in Okinawa.</p>
+            <a href="https://www.booking.com/beach/region/jp/okinawa.en-gb.html?aid=356980&label=gog235jc-1DCAYYASh1OHRIM1gDaIECiAEBmAEJuAEXyAEM2AED6AEBiAIBqAIDuALX16-8BsACAdICJDc1MTJiOWNhLTkwODUtNGYxZC05ZjIxLTBkYjlmYmYyNTEzNNgCBOACAQ&sid=f7991437328639c00e4c09631033294b&keep_landing=1&">Book in!</a>
+        </div>
+        <div class="card">
+            <img src="6.png" alt="Nagano Hotel">
+            <h3>Mountain Lodge in Nagano</h3>
+            <p>Enjoy a cozy stay in the Japanese Alps with access to skiing and hot springs.</p>
+            <a href="https://www.booking.com/beach/region/jp/nagano.en-gb.html?aid=1861276&label=nagano-UINRdxwbhc0YcvIRaJ%2AbpwS631033154831%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-315879522709%3Alp1028594%3Ali%3Adec%3Adm&gclid=Cj0KCQiAv628BhC2ARIsAIJIiK_u3Evs6tmUcb5Oj29LMZAxnRPThwHIBzZ4J8weOKwXNmtGlkIpTjkaAs8cEALw_wcB&keep_landing=1&sid=f7991437328639c00e4c09631033294b">Book in!</a>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="section" id="food">
+    <h2>Food</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="7.png" alt="Sushi">
+            <h3>Sushi</h3>
+            <p>Discover the art of sushi, made fresh with the finest ingredients.</p>
+             <a href="https://www.tableall.com/restaurants/genre/Sushi">Where to eat Sushi</a>
+        </div>
+        <div class="card">
+            <img src="8.png" alt="Ramen">
+            <h3>Ramen</h3>
+            <p>Warm up with a bowl of authentic Japanese ramen.</p>
+            <a href="https://www.tripadvisor.com/Restaurants-g298184-zfd11722-Tokyo_Tokyo_Prefecture_Kanto-Ramen.html">Where to eat Ramen</a>
+        </div>
+        <div class="card">
+            <img src="9.png" alt="Tempura">
+            <h3>Tempura</h3>
+            <p>Delight in crispy, golden-battered seafood and vegetables.</p>
+            <a href="https://www.tableall.com/restaurants/genre/Tempura">Where to eat Tempura</a>
+        </div>
+        <div class="card">
+            <img src="10.png" alt="Wagyu Beef">
+            <h3>Wagyu Beef</h3>
+            <p>Taste the world-renowned tender and flavorful Wagyu beef.</p>
+            <a href="https://www.tableall.com/restaurants/genre/Wagyu">Where to eat Wagyu Beef</a>
+        </div>
+        <div class="card">
+            <img src="11.png" alt="Takoyaki">
+            <h3>Takoyaki</h3>
+            <p>Try these delicious octopus-filled snacks, a favorite street food in Osaka.</p>
+            <a href="https://www.tripadvisor.com/Restaurant_Review-g14134368-d3801030-Reviews-Takoyaki_Jyuhachiban_Odaiba_Ten-Daiba_Minato_Tokyo_Tokyo_Prefecture_Kanto.html">Where to eat Takoyaki</a>
+        </div>
+        <div class="card">
+            <img src="12.png" alt="Matcha Dessert">
+            <h3>Matcha Desserts</h3>
+            <p>Indulge in desserts flavored with Japan's iconic green tea powder.</p>
+            <a href="https://www.tripadvisor.com.my/Restaurant_Review-g14129528-d3640607-Reviews-Saryo_Tsujiri_Daimaru_Tokyo-Marunouchi_Chiyoda_Tokyo_Tokyo_Prefecture_Kanto.html">Where to eat Matcha Dessert</a>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+<div class="section" id="places">
+    <h2>Places to Visit</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="13.png" alt="Mount Fuji">
+            <h3>Mount Fuji</h3>
+            <p>Visit Japan's iconic mountain and enjoy breathtaking views.</p>
+             <a href="https://www.britannica.com/place/Mount-Fuji">Learn More</a>
+        </div>
+        <div class="card">
+            <img src="14.png" alt="Arashiyama Bamboo Grove">
+            <h3>Arashiyama Bamboo Grove</h3>
+            <p>Stroll through the enchanting bamboo forest in Kyoto.</p>
+            <a href="https://www.insidekyoto.com/arashiyama-bamboo-grove">Learn More</a>
+        
+        </div>
+        <div class="card">
+            <img src="15.png" alt="Golden Pavilion">
+            <h3>Kinkaku-ji (Golden Pavilion)</h3>
+            <p>Marvel at the stunning Golden Pavilion in Kyoto's tranquil setting.</p>
+            <a href="https://www.japan-guide.com/e/e3908.html">Learn More</a>
+        </div>
+        <div class="card">
+            <img src="16.png" alt="Tokyo Tower">
+            <h3>Tokyo Tower</h3>
+            <p>Enjoy panoramic city views from one of Tokyo's most famous landmarks.</p>
+            <a href="https://en.tokyotower.co.jp/">Learn More</a>
+        </div>
+        <div class="card">
+            <img src="17.png" alt="Hiroshima Peace Memorial">
+            <h3>Hiroshima Peace Memorial</h3>
+            <p>Reflect on history at the Peace Memorial Park and Museum in Hiroshima.</p>
+            <a href="https://hpmmuseum.jp/?lang=eng">Learn More</a>
+        </div>
+        <div class="card">
+            <img src="18.png" alt="Nara Park">
+            <h3>Nara Park</h3>
+            <p>Meet friendly deer and explore historic temples in Nara Park.</p>
+            <a href="https://www.visitnara.jp/destinations/area/nara-park/">Learn More</a>
+        </div>
+    </div>
+</div>
+
+
+    <section class="highlights">
+        <h2>Highlights of Japan</h2>
+        <p>From ancient temples to bustling cities, Japan offers a unique blend of culture and innovation.</p>
+        <ul>
+            <li>Beautiful Cherry Blossoms</li>
+            <li>Rich Historical Heritage</li>
+            <li>Famous Culinary Delights</li>
+        </ul>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Visitors Say</h2>
+        <blockquote>
+            "Japan is a place like no other! The people, culture, and food were unforgettable." - Emily K.
+        </blockquote>
+        <blockquote>
+            "The mix of traditional and modern was fascinating. A must-visit destination!" - John D.
+        </blockquote>
+    </section>
+
+    <section class="videos">
+        <h2>Discover Japan in Motion</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="JAPAN - Where tradition meets the future _ JNTO.mp4" title="YouTube video player"></iframe>
+            <iframe width="560" height="315" src="Tokyo in 8K ULTRA HD - 1st Largest city in the world (60 FPS).mp4" title="YouTube video player"></iframe>
+        </div>
+    </section>
+
+    <section class="events-travel">
+        <div class="events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li><strong>Cherry Blossom Festival:</strong> April 2025</li>
+                <li><strong>Gion Matsuri:</strong> July 2025</li>
+                <li><strong>Tokyo Game Show:</strong> September 2025</li>
+            </ul>
+        </div>
+
+        <div class="travel-deals">
+            <h2>Plan Your Trip</h2>
+            <p>Check out these exclusive travel deals to Japan:</p>
+            <ul>
+                <li><a href="https://alljapantours.com/japan-group-tours/japan-cherry-blossom-tours/">Cherry Blossom Tour Package</a></li>
+                <li><a href="https://www.roughguides.com/article/a-first-timers-guide-to-staying-in-a-japanese-ryokan/">Traditional Ryokan Experience</a></li>
+                <li><a href="https://www.japan-guide.com/e/e2164.html">Tokyo City Exploration</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="image-gallery" id="gallery">
+    <h2>Explore Japan Through Pictures</h2>
+    <div class="gallery-grid">
+        <img src="japan.png" alt="Mount Fuji">
+        <img src="1.1png.jpg" alt="Cherry Blossoms">
+        <img src="1.2png.jpg" alt="Tokyo Skyline">
+        <img src="1.3.jpg" alt="Kyoto Temple">
+        <img src="1.4.jpg" alt="Traditional Ryokan">
+        <img src="1.5.png" alt="Sushi Platter">
+        <img src="1.6.webp" alt="Osaka Castle">
+        <img src="17.png" alt="Arashiyama Bamboo Forest">
+        <img src="1.7.jpg" alt="Shibuya Crossing">
+    </div>
+</section>
+
+</body>
+</html>
