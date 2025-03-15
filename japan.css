@@ -1,215 +1,218 @@
-body {
-    background-color: #f9f9f9;
-    color: #333;
-    font-size: 16px;
-    line-height: 1.6;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    color: #333;
+}
 
 header {
-    position: relative;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d3557;
     color: white;
-    padding: 50px 0;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('world.jpg') no-repeat center center;
-    background-size: cover;
+    padding: 20px;
 }
 
 header img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    filter: brightness(0.5);
+    height: 50px;
+    margin-right: 20px;
 }
 
 header .title {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
-    text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
 }
 
-
 nav {
-    background-color: #333;
-    padding: 15px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #457b9d;
 }
 
 nav ul {
-    list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    list-style-type: none;
+    padding: 10px 0;
 }
 
 nav ul li {
-    position: relative;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 600;
+    color: white;
+    font-size: 1.1rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    position: relative;
-    display: inline-block;
-    transition: color 0.3s ease;
+    letter-spacing: 1px;
 }
 
 nav ul li a:hover {
-    color: #f39c12;
+    color: #ff6f61;
+    transition: 0.3s;
 }
 
-
-nav ul li a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #f39c12;
-    bottom: 0;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s ease;
+section {
+    padding: 50px 20px;
 }
 
-nav ul li a:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-
-.countries-section {
-    padding: 60px 20px;
+h2 {
     text-align: center;
-    background-color: #fff;
-}
-
-.countries-section h2 {
-    font-size: 3rem;
-    margin-bottom: 40px;
-    color: #333;
-    font-weight: bold;
-    letter-spacing: 1px;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #1d3557;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
-    justify-content: center;
-    margin-top: 30px;
 }
 
-.country-card {
-    background-color: #fff;
-    border-radius: 12px;
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    transform: scale(1);
+    text-align: center;
+    padding: 20px;
 }
 
-.country-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-.country-card img {
+.card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    transition: transform 0.3s ease;
-    border-radius: 12px 12px 0 0;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
-.country-card:hover img {
-    transform: scale(1.1);
+.card h3 {
+    font-size: 1.6rem;
+    color: #1d3557;
+    margin-bottom: 10px;
 }
 
-.country-card h3 {
-    font-size: 2rem;
-    margin: 20px 0;
-    color: #333;
-    padding: 0 20px;
-}
-
-.country-card p {
-    font-size: 1.1rem;
+.card p {
+    font-size: 1rem;
     color: #555;
-    padding: 0 20px 20px;
+    margin-bottom: 15px;
+}
+
+.card a {
+    display: inline-block;
+    text-decoration: none;
+    color: #1d3557;
+    font-weight: bold;
+    border: 2px solid #1d3557;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    background-color: #1d3557;
+    color: white;
+}
+
+.highlights ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.highlights li {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.testimonials blockquote {
+    background-color: #e1e1e1;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-style: italic;
     margin-bottom: 20px;
 }
 
-.country-card a {
-    display: inline-block;
-    margin: 0 20px 20px;
-    padding: 14px 30px;
-    background-color: #f39c12;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 30px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+.videos .video-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.country-card a:hover {
-    background-color: #e67e22;
-    transform: translateY(-5px);
+.videos iframe {
+    border-radius: 8px;
+}
+
+.events-travel {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.events, .travel-deals {
+    width: 48%;
+}
+
+.events ul, .travel-deals ul {
+    list-style-type: none;
+}
+
+.events li, .travel-deals li {
+    margin-bottom: 15px;
+}
+
+.events h2, .travel-deals h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.travel-deals a {
+    text-decoration: none;
+    color: #1d3557;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.travel-deals a:hover {
+    color: #ff6f61;
+}
+
+.image-gallery {
+    background-color: white;
+    padding: 50px 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+    opacity: 0.8;
 }
 
 footer {
-    padding: 30px 0;
-    background-color: #333;
+    background-color: #457b9d;
     color: white;
     text-align: center;
-    font-size: 1rem;
-}
-
-@media (max-width: 768px) {
-    .grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    header .title {
-        font-size: 2.5rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    nav ul li a {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    header .title {
-        font-size: 2rem;
-    }
-
-    nav ul {
-        gap: 10px;
-    }
-
-    nav ul li a {
-        font-size: 0.9rem;
-    }
+    padding: 20px;
+    margin-top: 50px;
 }
