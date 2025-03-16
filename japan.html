@@ -9,10 +9,17 @@
 </head>
 <body>
 
-<header>
-    <img src="japan.png" alt="Japan">
-    <div class="title">Discover Japan</div>
-</header>
+    <header>
+        <div class="slideshow">
+            <img src="japan.png" class="active" alt="World Travel">
+            <img src="15.png" alt="Adventure Travel">
+            <img src="16.png" alt="Cultural Travel">
+            
+        </div>
+
+        <div class="title">Explore Japan</div>
+    </header>
+
 
 
 <nav>
@@ -21,11 +28,15 @@
         <li><a href="#hotels">Hotels</a></li>
         <li><a href="#food">Food</a></li>
         <li><a href="#places">Places to Visit</a></li>
-         <li><a href="#moreinfo">More info</a></li>
+       
          
     </ul>
 </nav>
 
+
+<br>
+    <br>
+    <br>
 <div class="section" id="hotels">
     <h2>Hotels</h2>
     <div class="grid">
@@ -161,6 +172,10 @@
 </div>
 
 
+<br>
+    <br>
+    <br>
+
     <section class="highlights">
         <h2>Highlights of Japan</h2>
         <p>From ancient temples to bustling cities, Japan offers a unique blend of culture and innovation.</p>
@@ -170,6 +185,10 @@
             <li>Famous Culinary Delights</li>
         </ul>
     </section>
+
+    <br>
+    <br>
+    <br>
 
     <section class="testimonials">
         <h2>What Visitors Say</h2>
@@ -211,19 +230,30 @@
     </section>
 
     <section class="image-gallery" id="gallery">
-    <h2>Explore Japan Through Pictures</h2>
-    <div class="gallery-grid">
-        <img src="japan.png" alt="Mount Fuji">
-        <img src="1.1png.jpg" alt="Cherry Blossoms">
-        <img src="1.2png.jpg" alt="Tokyo Skyline">
-        <img src="1.3.jpg" alt="Kyoto Temple">
-        <img src="1.4.jpg" alt="Traditional Ryokan">
-        <img src="1.5.png" alt="Sushi Platter">
-        <img src="1.6.webp" alt="Osaka Castle">
-        <img src="17.png" alt="Arashiyama Bamboo Forest">
-        <img src="1.7.jpg" alt="Shibuya Crossing">
+        <h2>Explore Japan Through Pictures</h2>
+        <div class="gallery-grid">
+            <img src="japan.png" alt="Mount Fuji" data-next="1.1png.jpg">
+            <img src="1.1png.jpg" alt="Cherry Blossoms" data-next="1.2png.jpg">
+            <img src="1.2png.jpg" alt="Tokyo Skyline" data-next="1.3.jpg">
+            <img src="1.3.jpg" alt="Kyoto Temple" data-next="1.4.jpg">
+            <img src="1.4.jpg" alt="Traditional Ryokan" data-next="1.5.png">
+            <img src="1.5.png" alt="Sushi Platter" data-next="1.6.webp">
+            <img src="1.6.webp" alt="Osaka Castle" data-next="17.png">
+            <img src="17.png" alt="Arashiyama Bamboo Forest" data-next="1.7.jpg">
+            <img src="1.7.jpg" alt="Shibuya Crossing" data-next="japan.png">
+        </div>
+    </section>
+
+    <div id="fullscreenModal" class="fullscreen-modal">
+        <span id="closeModal" class="close-btn">&times;</span>
+        <img id="fullscreenImage" class="fullscreen-img">
+        <div class="nav-buttons">
+            <button id="prevBtn" class="nav-btn">Previous</button>
+            <button id="nextBtn" class="nav-btn">Next</button>
+        </div>
     </div>
-</section>
+
+<script src="main.js"></script>
 
 </body>
 </html>

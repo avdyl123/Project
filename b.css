@@ -1,0 +1,12 @@
+body { 
+    font-family: Arial, sans-serif; background-color: #f4f4f4;
+ }
+.booking-section { 
+    padding: 20px; background: white; margin: 50px auto; width: 300px; border-radius: 10px; 
+}
+input { 
+    width: 100%; padding: 10px; margin: 5px 0; 
+}
+button { 
+    padding: 10px; background: #007BFF; color: white; border: none; cursor: pointer; 
+}

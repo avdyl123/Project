@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <style>
+       
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+        .booking-section { padding: 20px; background: white; margin: 50px auto; width: 300px; border-radius: 10px; }
+        input { width: 100%; padding: 10px; margin: 5px 0; }
+        button { padding: 10px; background: #007BFF; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <section class="booking-section">
+        <h2>Book Your Stay</h2>
+        <form id="booking-form">
+            <label for="check-in">Check-in Date:</label>
+            <input type="date" id="check-in" required>
+
+            <label for="check-out">Check-out Date:</label>
+            <input type="date" id="check-out" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" required>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+        <div id="response-message"></div>
+    </section>
+
+    <script src="booking.js"></script>
+</body>
+</html>
