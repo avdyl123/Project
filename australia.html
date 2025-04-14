@@ -9,10 +9,17 @@
 </head>
 <body>
 
-<header>
-    <img src="australia.png" alt="Australia">
-    <div class="title">Discover Australia</div>
-</header>
+    <header>
+        <div class="slideshow">
+            <img src="australia.png" class="active" alt="World Travel">
+            <img src="2.4.jpg" alt="Adventure Travel">
+            <img src="51.jpg" alt="Cultural Travel">
+            
+        </div>
+
+        <div class="title">Explore Austarila</div>
+    </header>
+
 
 <nav>
     <ul>
@@ -22,6 +29,12 @@
         <li><a href="#places">Places to Visit</a></li>
     </ul>
 </nav>
+
+
+<br>
+<br>
+<br>
+<br>
 
 <div class="section" id="hotels">
     <h2>Hotels</h2>
@@ -65,6 +78,11 @@
     </div>
 </div>
 
+    <br>
+    <br>
+    <br>
+    <br>
+
 <div class="section" id="food">
     <h2>Food</h2>
     <div class="grid">
@@ -107,6 +125,11 @@
         </div>
     </div>
 </div>
+
+<br>
+    <br>
+    <br>
+    <br>
 
 <div class="section" id="places">
     <h2>Places to Visit</h2>
@@ -220,6 +243,17 @@
         <img src="2.7.jpg" alt="Sydney Harbour Bridge">
     </div>
 </section>
+
+<div id="fullscreenModal" class="fullscreen-modal">
+    <span id="closeModal" class="close-btn">&times;</span>
+    <img id="fullscreenImage" class="fullscreen-img">
+    <div class="nav-buttons">
+        <button id="prevBtn" class="nav-btn">Previous</button>
+        <button id="nextBtn" class="nav-btn">Next</button>
+    </div>
+</div>
+
+<script src="main.js"></script>
 
 </body>
 </html>

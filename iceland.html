@@ -8,10 +8,16 @@
 </head>
 <body>
 
-<header>
-    <img src="iceland.webp" alt="Discover Iceland">
-    <div class="title">Discover Iceland</div>
-</header>
+    <header>
+        <div class="slideshow">
+            <img src="iceland.png" class="active" alt="World Travel">
+            <img src="150.jpg" alt="Adventure Travel">
+            <img src="151.webp" alt="Cultural Travel">
+            
+        </div>
+
+        <div class="title">Explore Iceland</div>
+    </header>
 
 <nav>
     <ul>
@@ -21,6 +27,11 @@
         <li><a href="#places">Places to Visit</a></li>
     </ul>
 </nav>
+
+<br>
+    <br>
+    <br>
+    <br>
 
 <div class="section" id="hotels">
     <h2>Hotels</h2>
@@ -47,6 +58,11 @@
     </div>
 </div>
 
+<br>
+    <br>
+    <br>
+    <br>
+
 <div class="section" id="food">
     <h2>Food</h2>
     <div class="grid">
@@ -69,6 +85,11 @@
             <a href="https://www.tripadvisor.com">Find Restaurants</a>
         </div>
 </div>
+
+<br>
+    <br>
+    <br>
+    <br>
 
 <div class="section" id="places">
     <h2>Places to Visit</h2>
@@ -156,5 +177,15 @@
     </div>
 </section>
 
+<div id="fullscreenModal" class="fullscreen-modal">
+    <span id="closeModal" class="close-btn">&times;</span>
+    <img id="fullscreenImage" class="fullscreen-img">
+    <div class="nav-buttons">
+        <button id="prevBtn" class="nav-btn">Next</button>
+        <button id="nextBtn" class="nav-btn">Previous</button>
+    </div>
+</div>
+
+<script src="main.js"></script>
 </body>
 </html>

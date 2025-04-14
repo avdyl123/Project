@@ -8,10 +8,16 @@
 </head>
 <body>
 
-<header>
-    <img src="usa.png" alt="USA">
-    <div class="title">Discover the USA</div>
-</header>
+    <header>
+        <div class="slideshow">
+            <img src="usa.png" class="active" alt="World Travel">
+            <img src="108.jpg" alt="Adventure Travel">
+            <img src="106.jpg" alt="Cultural Travel">
+            
+        </div>
+
+        <div class="title">Explore USA</div>
+    </header>
 
 <nav>
     <ul>
@@ -22,6 +28,11 @@
         <li><a href="#moreinfo">More Info</a></li>
     </ul>
 </nav>
+
+<br>
+    <br>
+    <br>
+    <br>
 
 
 <div class="section" id="hotels">
@@ -66,6 +77,11 @@
     </div>
 </div>
 
+<br>
+    <br>
+    <br>
+    <br>
+
 <div class="section" id="food">
     <h2>Food</h2>
     <div class="grid">
@@ -107,6 +123,11 @@
         </div>
     </div>
 </div>
+
+<br>
+    <br>
+    <br>
+    <br>
 
 <div class="section" id="places">
     <h2>Places to Visit</h2>
@@ -213,6 +234,17 @@
         <img src="4.1.jpg" alt="Mount Rushmore">
     </div>
 </section>
+
+<div id="fullscreenModal" class="fullscreen-modal">
+    <span id="closeModal" class="close-btn">&times;</span>
+    <img id="fullscreenImage" class="fullscreen-img">
+    <div class="nav-buttons">
+        <button id="prevBtn" class="nav-btn">Previous</button>
+        <button id="nextBtn" class="nav-btn">Next</button>
+    </div>
+</div>
+
+<script src="main.js"></script>
 
 </body>
 </html>
