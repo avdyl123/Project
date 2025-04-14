@@ -110,7 +110,7 @@ h2 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(475px, 1fr));
     gap: 30px;
 }
 
@@ -180,7 +180,6 @@ h2 {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -207,7 +206,7 @@ p {
     margin-bottom: 20px;
 }
 
-/* Highlights Section */
+
 .highlights {
     background-color: #fff;
     padding: 50px 20px;
@@ -246,7 +245,7 @@ p {
     background-color: #c0392b;
 }
 
-/* Testimonials Section */
+
 .testimonials {
     background-color: #ecf0f1;
     padding: 50px 20px;
@@ -379,18 +378,18 @@ ul {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    cursor: pointer; /* Makes the images clickable */
+    cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery-grid img:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.05); 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Fullscreen Modal */
+
 .fullscreen-modal {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed;
     z-index: 9999;
     top: 0;
