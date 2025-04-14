@@ -9,10 +9,16 @@
 </head>
 <body>
 
-<header>
-    <img src="italy.png" alt="Italy">
-    <div class="title">Discover Italy</div>
-</header>
+    <header>
+        <div class="slideshow">
+            <img src="italy.png" class="active" alt="World Travel">
+            <img src="32.jpg" alt="Adventure Travel">
+            <img src="33.jpg" alt="Cultural Travel">
+            
+        </div>
+
+        <div class="title">Explore Japan</div>
+    </header>
 
 <nav>
     <ul>
@@ -236,6 +242,17 @@
         <img src="2.3.jpg" alt="Vatican City">
     </div>
 </section>
+
+<div id="fullscreenModal" class="fullscreen-modal">
+    <span id="closeModal" class="close-btn">&times;</span>
+    <img id="fullscreenImage" class="fullscreen-img">
+    <div class="nav-buttons">
+        <button id="prevBtn" class="nav-btn">Previous</button>
+        <button id="nextBtn" class="nav-btn">Next</button>
+    </div>
+</div>
+
+<script src="main.js"></script>
 
 </body>
 </html>
