@@ -21,20 +21,38 @@
         <p>If you have any questions, comments, or suggestions, feel free to get in touch with us. We're always happy to hear from fellow travelers!</p>
 
         <h3>Contact Form</h3>
-            <div class="form-group">
+        <form onsubmit="return validation();" method="POST">
+            <div class="name-container">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
+                <span id="name_error">Please enter a valid Name</span>
             </div>
-            <div class="form-group">
+            <div class="name-container">
+                <label id="age_label" for="name">Age:</label>
+                <input type="text" name="age" id="age">
+                <span id="age_error">Please enter a valid age</span>
+            </div>
+            <div class="name-container">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
+                <span id="name_error">Please enter a valid Email</span>
             </div>
-            <div class="form-group">
+            <div class="name-container">
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit">Send Message</button>
-        </form>
+                <div class="city-container">
+                    <label id="city_label" for="city">City:</label>
+                    <select name="city" id="city">
+                        <option value="Prishtine">Prishtine</option>
+                        <option value="Prizren">Prizren</option>
+                        <option value="Gjilan">Gjilan</option>
+                        <option value="Ferizaj">Ferizaj</option>
+                    </select>
+                    <span id="city_error">PLease select a city</span>
+                </div>
+                <br>
+                <button type="submit" name="submit">Send</button>
+                </form>
 
         <h3>Our Address</h3>
         <p>We may be a virtual team, but we love connecting with our audience!</p>
