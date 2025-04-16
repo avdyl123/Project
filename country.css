@@ -1,3 +1,7 @@
+h1{
+    margin-left: 800px;
+}
+
 .countries-section {
     padding: 60px 20px;
     text-align: center;
@@ -6,6 +10,7 @@
 
 .countries-section h2 {
     font-size: 3rem;
+    margin-left: 50px;
     margin-bottom: 40px;
     color: #333;
     font-weight: bold;
