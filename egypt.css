@@ -319,13 +319,13 @@ iframe {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    padding: 50px 20px;
+    padding: 50 20px;
     background-color: #f1c40f;
 }
 
 .events, .travel-deals {
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 100px;
     padding: 20px;
     width: 45%;
 }
@@ -343,6 +343,7 @@ ul {
 
 .events li, .travel-deals li {
     margin-bottom: 10px;
+    
 }
 
 .travel-deals a {
