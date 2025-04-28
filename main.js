@@ -1,3 +1,9 @@
+const titleDiv = document.querySelector(".title");
+
+titleDiv.style.color = "white";  
+titleDiv.style.fontSize = "36px";  
+titleDiv.style.fontWeight = "bold";
+
 document.addEventListener("DOMContentLoaded", function() {
     let currentIndex = 0;
     const images = document.querySelectorAll(".slideshow img");
@@ -96,3 +102,7 @@ function validation() {
     }
 
     return isValid;}
+
+    const element = document.getElementById("myElement");
+    element.setAttribute("style", "color: red; background-color: yellow;");
+    
