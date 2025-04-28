@@ -96,3 +96,12 @@ function validation() {
     }
 
     return isValid;}
+
+    $('#sort').sortable();
+
+$(function(){
+   
+    $('#accordion').accordion();
+});
+
+$('#tabs').tabs();
