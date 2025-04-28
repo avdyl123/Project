@@ -1,35 +1,56 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
     color: #333;
     line-height: 1.6;
-    padding-top: 20px;
-}
-#name_error{
-    visibility: hidden;
-    color: red;
-}
-
-#age_error{
-    visibility: hidden;
-    color: red;
-}
-
-#city_error{
-    visibility: hidden;
-    color: red;
 }
 
 header {
-    background-color: #007bff;
+    background-color:#007bff;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header .logo h1 {
-    font-size: 2.5em;
-    letter-spacing: 2px;
+    font-size: 36px;
+    margin: 0;
+}
+
+.contact-us {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-us p {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
 }
 
 nav {
@@ -57,116 +78,93 @@ nav ul li a:hover {
     color: #007bff;
 }
 
-main {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 40px 20px;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-.contact-us {
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.contact-us h2 {
-    font-size: 2.5em;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.contact-us p {
-    font-size: 1.2em;
-    line-height: 1.8;
-    margin-bottom: 20px;
-    color: #555;
-}
-
-.contact-us h3 {
-    font-size: 2em;
-    margin-top: 30px;
-    color: #333;
-}
-
-.form-group {
+.name-container, .city-container {
     margin-bottom: 20px;
 }
 
 label {
-    display: block;
-    font-size: 1.1em;
-    margin-bottom: 5px;
+    font-size: 18px;
     color: #333;
+    margin-bottom: 8px;
 }
 
-input, textarea {
+input, select, textarea {
     width: 100%;
-    padding: 10px;
-    font-size: 1.1em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-input[type="text"], input[type="email"] {
-    margin-bottom: 10px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    margin-top: 8px;
+    box-sizing: border-box;
 }
 
 textarea {
     resize: vertical;
+    height: 120px;
 }
 
-button {
+button[type="submit"] {
+    padding: 12px;
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 15px 20px;
-    font-size: 1.2em;
+    border-radius: 6px;
     cursor: pointer;
-    border-radius: 4px;
-    width: 100%;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #0056b3;
+button[type="submit"]:hover {
+    background-color: #007bff;
 }
+
+button[type="submit"]:focus {
+    outline: none;
+}
+
+.error {
+    visibility: hidden;
+    color: red;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+input.invalid, select.invalid, textarea.invalid {
+    border-color: red;
+    background-color: #fdd;
+}
+
+input.valid, select.valid, textarea.valid {
+    border-color: green;
+    background-color: #e6ffed;
+}
+
+
+@media (max-width: 768px) {
+    .contact-us {
+        padding: 15px;
+    }
+
+    header .logo h1 {
+        font-size: 28px;
+    }
+}
+
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     margin-top: 40px;
 }
 
 footer p {
-    font-size: 1em;
-}
-
-@media screen and (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    main {
-        padding: 20px;
-    }
-
-    .contact-us h2 {
-        font-size: 2em;
-    }
-
-    .contact-us h3 {
-        font-size: 1.8em;
-    }
-
-    .contact-us p, .contact-us label, .contact-us input, .contact-us textarea {
-        font-size: 1em;
-    }
-
-    button {
-        font-size: 1.1em;
-    }
+    font-size: 16px;
 }

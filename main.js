@@ -154,6 +154,9 @@ modal.addEventListener('click', (e) => {
 });
 
 
+elementsToFade.forEach(element => {
+    observer.observe(element);
+});
 
 function validation() {
     var name = document.getElementById("name").value.trim();
@@ -168,42 +171,45 @@ function validation() {
     
     if (!valid_name_regex.test(name)) {
         document.getElementById("name_error").style.visibility = "visible";
-        document.getElementById("name").classList.add("invalid");
-        document.getElementById("name").classList.remove("valid");
+        document.getElementById("name").style.borderColor = "red";
         isValid = false;
     } else {
         document.getElementById("name_error").style.visibility = "hidden";
-        document.getElementById("name").classList.add("valid");
-        document.getElementById("name").classList.remove("invalid");
+        document.getElementById("name").style.borderColor = "black";
     }
 
     
     if (!valid_age_regex.test(age)) {
         document.getElementById("age_error").style.visibility = "visible";
-        document.getElementById("age").classList.add("invalid");
-        document.getElementById("age").classList.remove("valid");
+        document.getElementById("age").style.borderColor = "red";
         isValid = false;
     } else {
         document.getElementById("age_error").style.visibility = "hidden";
-        document.getElementById("age").classList.add("valid");
-        document.getElementById("age").classList.remove("invalid");
+        document.getElementById("age").style.borderColor = "black";
     }
 
     
     if (city === "") {
         document.getElementById("city_error").style.visibility = "visible";
-        document.getElementById("city").classList.add("invalid");
-        document.getElementById("city").classList.remove("valid");
+        document.getElementById("city").style.borderColor = "red";
         isValid = false;
     } else {
         document.getElementById("city_error").style.visibility = "hidden";
-        document.getElementById("city").classList.add("valid");
-        document.getElementById("city").classList.remove("invalid");
+        document.getElementById("city").style.borderColor = "black";
     }
 
-    return isValid;
+    if (isValid) {
+        
+        var confirmation = confirm("Are you sure you want to submit this form?");
+        if (!confirmation) {
+           
+            return false;
+        }
+    }
+
+    return isValid; //
 }
 
-    const element = document.getElementById("myElement");
-    element.setAttribute("style", "color: red; background-color: yellow;");
+
+    
     
