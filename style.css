@@ -34,12 +34,13 @@ body {
     z-index: 1;
 }
 .title {
-    position: absolute;
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-    z-index: 2;
+    font-size: 24px; 
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid orange;
+    animation: blink 0.7s infinite;
+    text-align: center; 
+    margin-top: 20px; 
 }
 
 header {
@@ -199,6 +200,42 @@ nav ul li a:hover::after {
     transform: translateY(-5px);
 }
 
+.accordion-button {
+    background-color: #ffffff;
+    color: #333;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.accordion-button:hover {
+    background-color: #e9ecef;
+}
+.accordion-item {
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.accordion-body {
+    background-color: #ffffff;
+}
+.nav-tabs .nav-link {
+    color: #495057;
+    font-weight: 500;
+}
+.nav-tabs .nav-link.active {
+    background-color: #0d6efd;
+    color: #fff;
+    border-radius: 5px;
+}
+.tab-content {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
 footer {
     padding: 30px 0;
     background-color: #333;
@@ -206,6 +243,40 @@ footer {
     text-align: center;
     font-size: 1rem;
 }
+
+#backToTop:hover {
+    background-color: #555;
+}
+
+
+.country-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.country-card.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.title {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid orange;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        border-color: orange;
+    }
+    50% {
+        border-color: transparent;
+    }
+}
+
 
 @media (max-width: 768px) {
     .grid {

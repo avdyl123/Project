@@ -1,8 +1,102 @@
-const titleDiv = document.querySelector(".title");
 
-titleDiv.style.color = "white";  
-titleDiv.style.fontSize = "36px";  
-titleDiv.style.fontWeight = "bold";
+document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+
+const backToTopButton = document.createElement('button');
+backToTopButton.innerText = '↑ Top';
+backToTopButton.id = 'backToTop';
+document.body.appendChild(backToTopButton);
+
+backToTopButton.style.position = 'fixed';
+backToTopButton.style.bottom = '20px';
+backToTopButton.style.right = '20px';
+backToTopButton.style.padding = '10px 15px';
+backToTopButton.style.display = 'none';
+backToTopButton.style.backgroundColor = '#333';
+backToTopButton.style.color = '#fff';
+backToTopButton.style.border = 'none';
+backToTopButton.style.borderRadius = '5px';
+backToTopButton.style.cursor = 'pointer';
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+});
+
+
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+
+const cards = document.querySelectorAll('.country-card');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+cards.forEach(card => {
+    observer.observe(card);
+});
+
+
+const title = document.querySelector('.title');
+const text = title.innerText;
+title.innerText = '';
+let index = 0;
+
+function typeEffect() {
+    if (index < text.length) {
+        title.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 100);
+    }
+}
+typeEffect();
+
+
+document.querySelectorAll('.country-card a').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        alert('Redirecting to more information about ' + this.parentElement.querySelector('h3, h2').innerText + '!');
+        window.location.href = this.href;
+    });
+});
+
+
+let slideIndex = 0;
+const slides = document.querySelectorAll('.slideshow img');
+
+function showSlides() {
+    slides.forEach(slide => slide.classList.remove('active'));
+    slideIndex = (slideIndex + 1) % slides.length;
+    slides[slideIndex].classList.add('active');
+}
+
+setInterval(showSlides, 3000);
+
 
 document.addEventListener("DOMContentLoaded", function() {
     let currentIndex = 0;
@@ -74,34 +168,41 @@ function validation() {
     
     if (!valid_name_regex.test(name)) {
         document.getElementById("name_error").style.visibility = "visible";
-        document.getElementById("name").style.borderColor = "red";
+        document.getElementById("name").classList.add("invalid");
+        document.getElementById("name").classList.remove("valid");
         isValid = false;
     } else {
         document.getElementById("name_error").style.visibility = "hidden";
-        document.getElementById("name").style.borderColor = "black";
+        document.getElementById("name").classList.add("valid");
+        document.getElementById("name").classList.remove("invalid");
     }
 
-   
+    
     if (!valid_age_regex.test(age)) {
         document.getElementById("age_error").style.visibility = "visible";
-        document.getElementById("age").style.borderColor = "red";
+        document.getElementById("age").classList.add("invalid");
+        document.getElementById("age").classList.remove("valid");
         isValid = false;
     } else {
         document.getElementById("age_error").style.visibility = "hidden";
-        document.getElementById("age").style.borderColor = "black";
+        document.getElementById("age").classList.add("valid");
+        document.getElementById("age").classList.remove("invalid");
     }
 
     
     if (city === "") {
         document.getElementById("city_error").style.visibility = "visible";
-        document.getElementById("city").style.borderColor = "red";
+        document.getElementById("city").classList.add("invalid");
+        document.getElementById("city").classList.remove("valid");
         isValid = false;
     } else {
         document.getElementById("city_error").style.visibility = "hidden";
-        document.getElementById("city").style.borderColor = "black";
+        document.getElementById("city").classList.add("valid");
+        document.getElementById("city").classList.remove("invalid");
     }
 
-    return isValid;}
+    return isValid;
+}
 
     const element = document.getElementById("myElement");
     element.setAttribute("style", "color: red; background-color: yellow;");

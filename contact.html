@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
@@ -14,56 +14,54 @@
     </div>
 </header>
 
+<section class="contact-us">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, comments, or suggestions, feel free to get in touch with us. We're always happy to hear from fellow travelers!</p>
 
+    <h3>Contact Form</h3>
+    <form onsubmit="return validation();" method="POST">
+        <div class="name-container">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <span id="name_error" class="error">Please enter a valid Name</span>
+        </div>
+        <div class="name-container">
+            <label for="age">Age:</label>
+            <input type="text" name="age" id="age">
+            <span id="age_error" class="error">Please enter a valid age</span>
+        </div>
+        <div class="name-container">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <span id="email_error" class="error">Please enter a valid Email</span>
+        </div>
+        <div class="name-container">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+        <div class="city-container">
+            <label for="city">City:</label>
+            <select name="city" id="city">
+                <option value="">Select a City</option>
+                <option value="Prishtine">Prishtine</option>
+                <option value="Prizren">Prizren</option>
+                <option value="Gjilan">Gjilan</option>
+                <option value="Ferizaj">Ferizaj</option>
+            </select>
+            <span id="city_error" class="error">Please select a city</span>
+        </div>
+        <br>
+        <button type="submit" name="submit">Send</button>
+    </form>
 
-    <section class="contact-us">
-        <h2>Contact Us</h2>
-        <p>If you have any questions, comments, or suggestions, feel free to get in touch with us. We're always happy to hear from fellow travelers!</p>
+    <h3>Our Address</h3>
+    <p>We may be a virtual team, but we love connecting with our audience!</p>
+    <p><strong>Address:</strong>Rruga "Agim Ramadani" 12</p>
+    <p><strong>Email:</strong> top10countries@gmail.com</p>
+</section>
 
-        <h3>Contact Form</h3>
-        <form onsubmit="return validation();" method="POST">
-            <div class="name-container">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" >
-                <span id="name_error">Please enter a valid Name</span>
-            </div>
-            <div class="name-container">
-                <label id="age_label" for="name">Age:</label>
-                <input type="text" name="age" id="age">
-                <span id="age_error">Please enter a valid age</span>
-            </div>
-            <div class="name-container">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-                <span id="name_error">Please enter a valid Email</span>
-            </div>
-            <div class="name-container">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" ></textarea>
-                <div class="city-container">
-                    <label id="city_label" for="city">City:</label>
-                    <select name="city" id="city">
-                        <option value="Prishtine">Prishtine</option>
-                        <option value="Prizren">Prizren</option>
-                        <option value="Gjilan">Gjilan</option>
-                        <option value="Ferizaj">Ferizaj</option>
-                    </select>
-                    <span id="city_error">Please select a city</span>
-                </div>
-                <br>
-                <button type="submit" name="submit">Send</button>
-                </form>
-
-        <h3>Our Address</h3>
-        <p>We may be a virtual team, but we love connecting with our audience!</p>
-        <p><strong>Address:</strong>Rruga "Agim Ramadani" 12</p>
-        <p><strong>Email:</strong> top10countries@gmail.com</p>
-    </section>
-
-
-    <script src="main.js"></script>
-
-
+<script src="main.js"></script>
 
 </body>
 </html>
+
