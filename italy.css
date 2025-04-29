@@ -355,6 +355,74 @@ ul {
     color: #c0392b;
 }
 
+.italy-accordion {
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    background-color: #ffffff;
+}
+
+.accordion-button {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    color: #333;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 0;
+}
+
+.accordion-button:hover {
+    background: linear-gradient(to right, #fcb69f, #ffecd2);
+    color: #111;
+}
+
+.accordion-body {
+    background-color: #fff;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.custom-tabs .nav-link {
+    border: none;
+    margin-right: 5px;
+    border-radius: 8px 8px 0 0;
+    background-color: #f0f0f0;
+    color: #444;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.custom-tabs .nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.custom-tabs .nav-link:hover {
+    background-color: #ddd;
+}
+
+.tab-pane {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+}
+
+.styled-links li {
+    margin-bottom: 10px;
+}
+
+.styled-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.styled-links a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
 .image-gallery {
     background-color: #fff;
     padding: 50px 20px;

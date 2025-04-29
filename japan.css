@@ -418,20 +418,76 @@ ul {
     font-size: 1.2em;
 }
 
-.events li, .travel-deals li {
-    margin-bottom: 10px;
+.accordion-item {
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    background-color: #fff8f0;
 }
 
-.travel-deals a {
+.accordion-button {
+    background: linear-gradient(to right, #fceabb, #f8b500);
+    color: #4a3b1d;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:hover {
+    background: linear-gradient(to right, #f8b500, #fceabb);
+    color: #1f1f1f;
+}
+
+.accordion-body {
+    background-color: #fffdfa;
+    padding: 20px;
+    border-top: 1px solid #e2cfa0;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Tabs styling */
+.nav-tabs {
+    border-bottom: 2px solid #f8b500;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    margin-right: 5px;
+    background-color: #f0e4d7;
+    color: #4a3b1d;
+    font-weight: 500;
+    border-radius: 10px 10px 0 0;
+    transition: background 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #f8d69e;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #f8b500;
+    color: white;
+}
+
+.tab-pane {
+    background: #fffaf3;
+    border: 1px solid #f2d7a1;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+}
+
+ul li strong {
+    color: #d17b0f;
+}
+
+a {
+    color: #d17b0f;
     text-decoration: none;
-    color: #e74c3c;
-    font-weight: bold;
 }
 
-.travel-deals a:hover {
-    color: #c0392b;
+a:hover {
+    text-decoration: underline;
 }
-
 .image-gallery {
     background-color: #fff;
     padding: 50px 20px;

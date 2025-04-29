@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Australia</title>
     <link rel="stylesheet" href="australia.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
 </head>
 <body>
@@ -202,32 +204,41 @@
     </div>
 </section>
 
-<section class="events-travel">
-    <div class="events">
-        <h2>Upcoming Events</h2>
-        <ul>
-            <li>
-                <strong>Sydney New Year's Eve:</strong> December 2025
-            </li>
-            <li>
-                <strong>Melbourne International Comedy Festival:</strong> March 2025
-            </li>
-            <li>
-                <strong>Vivid Sydney:</strong> May 2025  
-            </li>
-        </ul>
-    </div>
+<div class="accordion-item">
+    <h2 class="accordion-header" id="headingTabsAustralia">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTabsAustralia" aria-expanded="false" aria-controls="collapseTabsAustralia">
+            More Information
+        </button>
+    </h2>
+    <div id="collapseTabsAustralia" class="accordion-collapse collapse" aria-labelledby="headingTabsAustralia" data-bs-parent="#eventsTravelAccordion">
+        <div class="accordion-body">
+            <ul class="nav nav-tabs" id="myTabAustralia" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="australia-culture-tab" data-bs-toggle="tab" data-bs-target="#australia-culture" type="button" role="tab" aria-controls="australia-culture" aria-selected="true">Culture</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="australia-cuisine-tab" data-bs-toggle="tab" data-bs-target="#australia-cuisine" type="button" role="tab" aria-controls="australia-cuisine" aria-selected="false">Cuisine</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="australia-etiquette-tab" data-bs-toggle="tab" data-bs-target="#australia-etiquette" type="button" role="tab" aria-controls="australia-etiquette" aria-selected="false">Etiquette</button>
+                </li>
+            </ul>
 
-    <div class="travel-deals">
-        <h2>Plan Your Trip</h2>
-        <p>Check out these exclusive travel deals to Australia:</p>
-        <ul>
-            <li><a href="https://www.sydneyoperahouse.com/tours">Sydney City and Opera House Tour</a></li>
-            <li><a href="https://sunlover.com.au/moore-reef/?gad_source=1&gclid=EAIaIQobChMIp93m-oqJiwMVXwkGAB1cIjEDEAAYASAAEgKOGPD_BwE">Great Barrier Reef Adventure</a></li>
-            <li><a href="https://www.wingswildlifepark.com.au/wildlife-park?gad_source=1&gclid=EAIaIQobChMIipHjlYuJiwMV3EVBAh2zGRDxEAAYAyAAEgLVZvD_BwE">Tasmanian Wildlife Exploration</a></li>
-        </ul>
+            <div class="tab-content" id="myTabContentAustralia">
+                <div class="tab-pane fade show active p-3" id="australia-culture" role="tabpanel" aria-labelledby="australia-culture-tab">
+                    <p>Australia is home to a vibrant and diverse culture, influenced by its Indigenous heritage and modern, multicultural society. Major cities like Sydney and Melbourne are cultural hubs, while Australia’s vast landscapes offer opportunities for exploration and outdoor activities.</p>
+                </div>
+                <div class="tab-pane fade p-3" id="australia-cuisine" role="tabpanel" aria-labelledby="australia-cuisine-tab">
+                    <p>Australian cuisine is a melting pot of flavors, with influences from British, Asian, and Mediterranean cultures. Popular dishes include meat pies, Vegemite, and fresh seafood. Indigenous Australian foods, like bush tucker, are also gaining popularity in contemporary dining.</p>
+                </div>
+                <div class="tab-pane fade p-3" id="australia-etiquette" role="tabpanel" aria-labelledby="australia-etiquette-tab">
+                    <p>Australian etiquette is laid-back but polite. It’s common to greet with a handshake, and maintaining personal space is important. Australians tend to be very casual in their interactions, but punctuality and respect for others' time is valued in both professional and social settings.</p>
+                </div>
+            </div>
+        </div>
     </div>
-</section>
+</div>
+
 
 <section class="image-gallery" id="gallery">
     <h2>Explore Australia Through Pictures</h2>
@@ -253,6 +264,7 @@
     </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="main.js"></script>
 
 </body>

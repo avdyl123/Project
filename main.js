@@ -207,7 +207,7 @@ function validation() {
         }
     }
 
-    return isValid; //
+    return isValid; 
 }
 
 
